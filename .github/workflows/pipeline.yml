@@ -33,3 +33,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "pokedex-through-pipeline"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
+          healthcheck: "https://pokedex-through-pipeline.herokuapp.com/health"
+          checkstring: "ok"
