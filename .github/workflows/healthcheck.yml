@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Check the deployed service URL
         uses: jtalk/url-health-check-action@v2
-       with:
+        with:
           url: https://pokedex-through-pipeline.herokuapp.com/health
           max-attempts: 3
           retry-delay: 5s
